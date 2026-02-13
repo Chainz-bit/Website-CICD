@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+}
+
+.container {
+   width: 80%;
+  margin-inline: auto;
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
+/* Navbar */
+.navbar {
+  padding: 30px 0;
+}
+
+.navbar-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-box .menu{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-box .menu li{
+  list-style: none;
+}
+
+.navbar-box .menu li a{
+  text-decoration: none;
+  color: #000;
+
+}
+
+@media (max-width: 768px) {
+  .navbar-box{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar-box .menu{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/* Navbar */
+
+/* Hero */
+
+.hero-box{
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6),rgba(0, 0, 1, 0.6)),url(/assets/images/hero.webp);
+  width: 100%;
+  border-radius: 25px;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero-box h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-box p{
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  opacity: 75%;
+  text-align: justify;
+}
+
+.hero-box a{
+  text-decoration: none;
+  background-color: indigo;
+  padding : 10px 25px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+
+}
+
+.hero-box a:hover{
+  background-color: rgb(98, 7, 163);
+}
+
+@media (max-width: 768px) {
+  .hero-box h1{
+    font-size: 30px;
+  }
+
+  .hero-box p{
+    font-size: 14px;
+  }
+}
+/* Hero */
+
+/* Tentang Kami*/
+
+.tentang{
+  padding: 180px 0;
+}
+
+.tentang-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.tentang-box img{
+  width : 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.tentang-box h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.tentang-box p{
+  line-height: 1.6;
+  text-align: justify;
+  opacity: 75%;
+}
+
+@media (max-width: 768px) {
+  .tentang-box{
+    grid-template-columns: 1fr;
+  }
+
+  .tentang-box h1{
+    font-size: 30px;
+  }
+}
+
+.tentang .info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+.tentang .info h2 span{
+  color: indigo;
+  font-size: 40px;
+}
+/* Tentang Kami*/
+
+/* akademik */
+
+.akademik{
+  padding-bottom: 100px;
+}
+
+.akademik-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.akademik-box .box {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.akademik-box img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+
+.akademik-box .desc{
+  padding: 20px;
+}
+
+.akademik-box .desc p{
+  line-height: 1.6;
+}
+
+@media (max-width:575px) {
+  .akademik-box{
+    gap: 40px;
+  }
+}
+/* akademik */
+
+/* PPDB */
+
+.ppdb{
+  padding-block: 50px;
+}
+
+.ppdb-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.ppdb-box img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ppdb-box h2{
+  margin-bottom: 10px;
+}
+
+.ppdb-box p{
+  margin-bottom: 20px;
+  line-height: 1.6;
+  opacity: 75%;
+}
+
+.ppdb-box a{
+  text-decoration: none;
+  background-color: indigo;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.ppdb-box a:hover{
+  background-color: rgb(98, 7, 163);
+}
+
+@media (max-width: 768px) {
+  .ppdb-box{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Footer */
+
+footer{
+  margin-top: 100px;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.footer-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 50px;
+}
+
+.footer-box p{
+  line-height: 1.6;
+  opacity: 75%;
+  font-size: 14px;
+}
+
+.footer-box .social{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer-box .social a{
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-box .social a:hover{
+  color: indigo;
+}
+
+.footer-box h2{
+  margin-bottom: 20px;
+}
+
+.footer-box .box:nth-child(1){
+  width: 400px;
+}
+
+.footer-box .box:nth-child(2){
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-box .box:nth-child(2) h2{
+  margin-bottom: 10px;
+}
+
+.footer-box .box:nth-child(2) a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 75%;
+}
+
+.footer-box .box:nth-child(2) a:hover{
+  color: indigo;
+}
+
+.footer-box .box:nth-child(3){
+  width: 300px;
+}
+
+.footer-box .box:nth-child(3) p{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 30px;
+  opacity: 75%;
+}
+
+.copyright p{
+  font-size: 14px;
+  
+}
+
+.copyright p span{
+  font-weight: bold;
+}
+/* Footer */
+
+/* Scroll To Top */
+
+.scroll-up{
+  width: 50px;
+  height: 50px;
+  background-color: indigo;
+  color: #fff;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  opacity: 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up.scroll-active{
+  opacity: 1;
+}
+
+/* Scroll To Top */
+/* PPDB */
